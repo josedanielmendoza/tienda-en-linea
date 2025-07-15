@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tienda Onile</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="logo de carga.png" type="image/x-icon">
+  </head>
+  <body>
+    <!--Menu-->
+    <nav>
+      <div class="logo">Mi Teinda</div>
+
+      <!--Boton de hamburguesa-->
+      <div class="menu-toggle" onclick="toggleMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <script src="script.js"></script>
+      </div>
+
+      <!--Enlaces del menu-->
+      <div class="menu" id="menu">
+        <a href="#inicio">Inicio</a>
+        <a href="#productos">Productos</a>
+        <a href="#ubicacion">Ubicación</a>
+        <a href="#comentarios">Comentarios</a>
+      </div>
+    </nav>
+
+
+    <!-- BIENVENIDA -->
+    <section class="bienvenida" id="inicio">Bienvenido a Mi Empresa</section>
+
+    <!-- MISIÓN Y VISIÓN -->
+    <section class="mision-vision">
+      <div class="bloque">
+        <img src="logo de carga.png" alt="Mision" />
+        <h3>Misión</h3>
+        <p>
+          Nuestra misión es ofrecer productos de calidad al mejor precio, con
+          atención personalizada.
+        </p>
+      </div>
+
+      <div class="bloque">
+        <img src="logo de carga.png" alt="Mision" />
+        <h3>Visión</h3>
+        <p>
+          Ser la empresa líder en innovación y confianza para nuestros clientes
+          en todo el país.
+        </p>
+      </div>
+    </section>
+
+    <!--Slaier de productos-->
+    <section class="slider-scroll" id="productos">
+      <h2 style="text-align: center; margin-bottom: 20px">
+        Nuestros Productos
+      </h2>
+      <div class="contenedor-slider">
+        <div class="slider">
+          <img src="logo de carga.png" alt="Imagen 1" />
+          <h3>Producto 1</h3>
+          <p>$150.00</p>
+          <button>Comprar</button>
+        </div>
+
+        <div class="slider">
+          <img src="logo de carga.png" alt="Imagen 2" />
+          <h3>Producto 2</h3>
+          <p>$150.00</p>
+          <button>Comprar</button>
+        </div>
+
+        <div class="slider">
+          <img src="logo de carga.png" alt="Imagen 3" />
+          <h3>Producto 3</h3>
+          <p>$150.00</p>
+          <button>Comprar</button>
+        </div>
+
+        <div class="slider">
+          <img src="logo de carga.png" alt="Imagen 4" />
+          <h3>Producto 4</h3>
+          <p>$150.00</p>
+          <button>Comprar</button>
+        </div>
+
+        <div class="slider">
+          <img src="logo de carga.png" alt="Imagen 5" />
+          <h3>Producto 5</h3>
+          <p>$150.00</p>
+          <button>Comprar</button>
+        </div>
+
+        <div class="slider">
+          <img src="logo de carga.png" alt="Imagen 6" />
+          <h3>Producto 6</h3>
+          <p>$150.00</p>
+          <button>Comprar</button>
+        </div>
+
+        <div class="slider">
+          <img src="logo de carga.png" alt="Imagen 7" />
+          <h3>Producto 7</h3>
+          <p>$150.00</p>
+          <button>Comprar</button>
+        </div>
+
+        <div class="slider">
+          <img src="logo de carga.png" alt="Imagen 8" />
+          <h3>Producto 8</h3>
+          <p>$150.00</p>
+          <button>Comprar</button>
+        </div>
+      </div>
+    </section>
+
+    <!--Mapa-->
+    <section class="mapa" id="ubicacion">
+      <h2>¿Donde estamos?</h2>
+      <iframe src="" frameborder="1" loading="lazy"> </iframe>
+    </section>
+
+    <!--Comentarios-->
+    <section class="comentarios" id="comentarios">
+      <h2>Dejanos tu comentario</h2>
+      <form action="">
+        <input type="text" placeholder="Tu nombre" required />
+        <input type="email" placeholder="Tu correo" required />
+        <textarea placeholder="Escribe tu comentario" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <!--Footer-->
+    <footer>© 2025 Mi Empresa | Todos los derechos reservados</footer>
+  </body>
+</html>

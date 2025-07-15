@@ -1,0 +1,285 @@
+/* Reset basico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Nav principal */
+nav {
+  background-color: #1e1e2f;
+  color: #ffff;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  color: #ffff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  height: 3px;
+  width: 25px;
+  background: #ffff;
+  margin: 4px 0;
+  transition: all 0.3s ease;
+}
+
+/* Bienvenida */
+.bienvenida {
+  background: url("logo\ de\ carga.") no-repeat center;
+  background-size: cover;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #24602d;
+  text-shadow: 2px 2px 5px black;
+  font-size: 2rem;
+}
+
+/* Mision y Vision */
+.mision-vision {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+  background: #ffff;
+}
+
+.mision-vision .bloque {
+  max-width: 300px;
+  text-align: center;
+}
+
+.mision-vision img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 1);
+}
+
+.mision-vision h3 {
+  margin-top: 15px;
+  color: #000000;
+}
+
+.mision-vision p {
+  font-size: 0.95rem;
+  color: rgb(47, 16, 47);
+  margin-top: 5px;
+}
+
+/* Slaider */
+.slider-scroll {
+  padding: 40px 20px;
+  background: #ffff;
+}
+
+.contenedor-slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 20px;
+  padding-bottom: 10px;
+  scroll-behavior: smooth;
+}
+
+.slider {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  width: 300px;
+  background: #d1ffd5;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 1);
+  text-align: center;
+  padding: 10px;
+}
+
+.slider img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.slider h3 {
+  margin: 10px 0 5px;
+}
+
+.slider p {
+  color: #474747;
+  font-weight: bold;
+}
+
+.slider button {
+  margin-top: 10px;
+  background: #76b578;
+  color: #ffff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Mapa */
+.mapa {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+iframe {
+  width: 100%;
+  max-width: 600px;
+  height: 300px;
+  border: none;
+}
+
+/* Comentarosi */
+.comentarios {
+  padding: 40px 20px;
+  background: #eee;
+  text-align: center;
+}
+
+.comentarios form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.comentarios input,
+.comentarios textarea {
+  padding: 10px;
+  border: 1px solid #76b578;
+  border-radius: 5px;
+}
+
+.comentarios button {
+  padding: 10px;
+  background: #76b578;
+  color: #ffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: #ffff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  /* Menu */
+  .menu {
+    flex-direction: column;
+    width: 100%;
+    display: none;
+    background-color: #2d2d3f;
+    margin-top: 10px;
+    padding: 10px 0;
+  }
+
+  .menu.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  /* Misión y Visión en vertical */
+  .mision-vision {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+  }
+
+  .mision-vision .bloque {
+    max-width: 100%;
+  }
+
+  /* Slider */
+  .contenedor-slider {
+    gap: 15px;
+    padding: 0 10px 20px;
+  }
+
+  .slider {
+    width: 80%;
+    min-width: 250px;
+  }
+
+  /* Mapa */
+  iframe {
+    width: 100%;
+    height: 250px;
+  }
+
+  /* Formulario de comentarios */
+  .comentarios form {
+    width: 90%;
+  }
+
+  .bienvenida {
+    font-size: 1.5em;
+    padding: 0 10px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .slider {
+    width: 90%;
+    min-width: 220px;
+  }
+
+  .menu a {
+    padding: 10px;
+    font-size: 1em;
+  }
+
+  .logo {
+    font-size: 1.2em;
+  }
+
+  .comentarios input,
+  .comentarios textarea {
+    font-size: 0.9em;
+  }
+
+  footer {
+    font-size: 0.9em;
+  }
+}
