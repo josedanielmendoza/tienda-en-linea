@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       const numeroCliente = "522841095281"; //  CAMBIA este número al WhatsApp del cliente
 
-      const mensaje = `Hola, tienes un nuevo comentario desde tu página web:%0A👤 Nombre: ${nombre}%0A📧 Correo: ${correo}%0A Comentario: ${comentario}`;
+      const mensaje = `Hola, tienes un nuevo comentario desde tu página web:%0A👤 Nombre: ${nombre}%0A📧 Correo: ${correo}%0A💬 Comentario: ${comentario}`;
 
       const url = `https://wa.me/${numeroCliente}?text=${mensaje}`;
       window.open(url, "_blank");
