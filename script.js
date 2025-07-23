@@ -26,3 +26,24 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+// FUNCIONALIDAD PARA COMPRAR PRODUCTOS Y ENVIAR A WHATSAPP
+document.addEventListener("DOMContentLoaded", function () {
+  const botonesComprar = document.querySelectorAll(".btn-comprar");
+
+  botonesComprar.forEach((boton) => {
+    boton.addEventListener("click", function () {
+      const nombre = boton.dataset.nombre;
+      const precio = boton.dataset.precio;
+      const descripcion = boton.dataset.descripcion;
+      const imagen = boton.dataset.imagen;
+
+      const numeroCliente = "522841095281"; // Reemplaza con tu número real
+
+      const mensaje = `🛒 *Nuevo Pedido*%0A%0A📦 Producto: ${nombre}%0A💵 Precio: ${precio}%0A📝 Descripción: ${descripcion}%0A🖼️ Imagen: https://tuweb.com/ruta/${imagen}`;
+
+      const url = `https://wa.me/${numeroCliente}?text=${mensaje}`;
+      window.open(url, "_blank");
+    });
+  });
+});
